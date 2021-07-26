@@ -23,17 +23,21 @@ it('google test', function(){
 })
 
 it('google test 2', function(){
-    firstPagePO.enterSearchText().type('Hello');
+    firstPagePO.enterSearchText().type('Python');
     firstPagePO.googleImapge().type('{enter}');
     firstPagePO.verifySearchResult().contains('About');
 })
 
 it('google test 3', function(){
-    firstPagePO.enterSearchText().type('Hello');
-    firstPagePO.googleImapge().click();
-    firstPagePO.searchButton().click();
-    cy.wait(6000);
-    firstPagePO.verifySearchResult().contains('About');
+    // firstPagePO.enterSearchText().type('Hello');
+    // firstPagePO.googleImapge().click();
+    // firstPagePO.searchButton().click();
+    // cy.wait(6000);
+    // firstPagePO.verifySearchResult().contains('About');
     
+    
+    firstPagePO.enterSearchText().type('Java');
+    firstPagePO.googleImapge().type('{enter}');
+    firstPagePO.verifySearchResult().contains('About');
 })
 

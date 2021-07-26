@@ -23,13 +23,13 @@ it('google test', function(){
 })
 
 it('google test 2', function(){
-    firstPagePO.enterSearchText().type('Hello');
+    firstPagePO.enterSearchText().type('Github');
     firstPagePO.googleImapge().type('{enter}');
     firstPagePO.verifySearchResult().contains('About');
 })
 
 it('google test 3', function(){
-    firstPagePO.enterSearchText().type('Hello');
+    firstPagePO.enterSearchText().type('Amazon AWS');
     firstPagePO.googleImapge().type('{enter}');
     firstPagePO.verifySearchResult().contains('About');
 })
