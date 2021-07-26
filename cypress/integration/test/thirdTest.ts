@@ -23,13 +23,13 @@ it('google test3-1', function(){
 })
 
 it('google test3-2', function(){
-    firstPagePO.enterSearchText().type('Hello');
+    firstPagePO.enterSearchText().type('Slack');
     firstPagePO.googleImapge().type('{enter}');
     firstPagePO.verifySearchResult().contains('About');
 })
 
 it('google test3-3', function(){
-    firstPagePO.enterSearchText().type('Hello');
+    firstPagePO.enterSearchText().type('Automation');
     firstPagePO.googleImapge().type('{enter}');
     firstPagePO.verifySearchResult().contains('About');
     cy.log('log the result')
