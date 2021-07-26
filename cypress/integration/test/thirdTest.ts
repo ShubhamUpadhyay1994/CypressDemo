@@ -32,5 +32,7 @@ it('google test3-3', function(){
     firstPagePO.enterSearchText().type('Hello');
     firstPagePO.googleImapge().type('{enter}');
     firstPagePO.verifySearchResult().contains('About');
+    cy.log('log the result')
+
 })
 
