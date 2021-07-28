@@ -29,14 +29,7 @@ it('google test 2', function(){
 })
 
 it('google test 3', function(){
-    // firstPagePO.enterSearchText().type('Hello');
-    // firstPagePO.googleImapge().click();
-    // firstPagePO.searchButton().click();
-    // cy.wait(6000);
-    // firstPagePO.verifySearchResult().contains('About');
-    
-    
-    firstPagePO.enterSearchText().type('Java');
+  firstPagePO.enterSearchText().type('Java');
     firstPagePO.googleImapge().type('{enter}');
     firstPagePO.verifySearchResult().contains('About');
 })
